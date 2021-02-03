@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     List<String> items;
 
+
     Button btnAdd;
     EditText etItem;
     RecyclerView rvItems;
@@ -38,7 +39,11 @@ public class MainActivity extends AppCompatActivity {
         btnAdd = findViewById(R.id.btnAdd);
         etItem = findViewById(R.id.etItem);
         rvItems = findViewById(R.id.rvItems);
+
+        //items.add("item 1");
         loadItems();
+        saveItems();
+
 
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
