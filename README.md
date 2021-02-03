@@ -7,6 +7,9 @@ Submitted by: **Maryum Shabazz**
 Time spent: **10** hours spent in total
 
 ## User Stories
+* As a user I want to be able to view a list of to do items so I that I can see what I need to complete.
+* As a user I want to be able to add and remove items from my to do list, so that I can keep an accurate list of what I have to complete.
+* As a user I want to have my list of items persist so that each time I start up the app I can have my data saved and be able to retrieve it quickly. 
 
 The following **required** functionality is completed:
 
