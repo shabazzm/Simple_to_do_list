@@ -13,22 +13,25 @@ import java.util.List;
 // Responsible for displaying data from the model into a row in the recycler view
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
 
-    List<String> items;
-    OnLongClickListener onLongClickListener;
-    //OnClickListener onClickListener;
+     public interface OnClickListener{
+      void onItemClicked(int position);
+    }
 
     public interface OnLongClickListener{
         void onItemLongClicked(int position);
     }
 
-   // public interface OnClickListener{
-     //   void onClickListener(int position);
-    //}
+    List<String> items;
+    OnLongClickListener longClickListener;
+    OnClickListener clickListener;
 
-    public ItemsAdapter(List<String> items, OnLongClickListener onLongClickListener){
+
+
+
+    public ItemsAdapter(List<String> items, OnLongClickListener longClickListener, OnClickListener clickListener){
         this.items = items;
-        this.onLongClickListener = onLongClickListener;
-       // this.onClickListener = onClickListener;
+        this.longClickListener = longClickListener;
+        this.clickListener = clickListener;
 
     }
 
@@ -75,11 +78,17 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
         // update the view inside of the view holder with this data
         public void bind(String item) {
             tvItem.setText(item);
+            tvItem.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                clickListener.onItemClicked(getAdapterPosition());
+                }
+            });
             tvItem.setOnLongClickListener(new View.OnLongClickListener(){
                 @Override
                 public boolean onLongClick(View v){
                     //Notifying the listener which position was long pressed
-                    onLongClickListener.onItemLongClicked(getAdapterPosition());
+                    longClickListener.onItemLongClicked(getAdapterPosition());
                     return true;
                 }
             });
