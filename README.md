@@ -10,6 +10,7 @@ Time spent: **10** hours spent in total
 * As a user I want to be able to view a list of to do items so I that I can see what I need to complete.
 * As a user I want to be able to add and remove items from my to do list, so that I can keep an accurate list of what I have to complete.
 * As a user I want to have my list of items persist so that each time I start up the app I can have my data saved and be able to retrieve it quickly. 
+* As a user I want to be able to edit the items in my to do list so that I can quickly update my list without having to remove or add an item
 
 The following **required** functionality is completed:
 
@@ -19,7 +20,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+* [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 The following **additional** features are implemented:
 
@@ -29,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='App_WalkThrough_Todo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='App_WalkThrough_Todo_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
