@@ -70,9 +70,6 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setBackgroundDrawable(colorDrawable);
         loadItems();
 
-
-
-
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
 
             @Override
