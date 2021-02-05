@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import org.apache.commons.io.FileUtils;
@@ -13,6 +14,7 @@ import org.apache.commons.io.FileUtils;
 
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 //Notify the adapter
                 itemsAdapter.notifyItemRemoved(position);
                 Toast.makeText(getApplicationContext(), "Item was removed", Toast.LENGTH_SHORT).show();
+                closeKeyboard();
                 saveItems();
             }
         };
@@ -92,12 +95,22 @@ public class MainActivity extends AppCompatActivity {
                 //Notify adapter that an item has been inserted
                 itemsAdapter.notifyItemInserted(items.size() - 1);
                 etItem.setText("");
+                closeKeyboard();
                 Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
                 saveItems();
 
             }
         });
 
+
+    }
+    // code from: https://www.geeksforgeeks.org/how-to-programmatically-hide-android-soft-keyboard/
+    private void closeKeyboard() {
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
     // handles the result of the edit activity
