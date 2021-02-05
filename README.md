@@ -10,7 +10,11 @@ Time spent: **10** hours spent in total
 * As a user I want to be able to view a list of to do items so I that I can see what I need to complete.
 * As a user I want to be able to add and remove items from my to do list, so that I can keep an accurate list of what I have to complete.
 * As a user I want to have my list of items persist so that each time I start up the app I can have my data saved and be able to retrieve it quickly. 
+
+## Optional/Addditional User Stories
 * As a user I want to be able to edit the items in my to do list so that I can quickly update my list without having to remove or add an item
+* As a user I want dividers between the items of my to do list so the list is easily visualized. 
+* As a user I want a aestheitically pleasing UI so that I want to use it more often
 
 The following **required** functionality is completed:
 
@@ -24,13 +28,16 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+* [X] Added dividers between list items
+* [X] Added Keyboard collapse when not in use
+* [X] Updated Color of Action Bar
 * [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='App_WalkThrough_Todo_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='App_WalkThrough_Todo_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
