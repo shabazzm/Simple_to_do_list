@@ -4,7 +4,7 @@
 
 Submitted by: **Maryum Shabazz**
 
-Time spent: **10** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 * As a user I want to be able to view a list of to do items so I that I can see what I need to complete.
