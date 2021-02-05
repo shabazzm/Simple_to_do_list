@@ -1,8 +1,11 @@
 package com.example.simple_to_do_list;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +24,18 @@ public class EditActivity extends AppCompatActivity {
         editItem = findViewById(R.id.editItem);
         btnSave = findViewById(R.id.btnSave);
 
+        // Define ActionBar object
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+        // Define ColorDrawable object and parse color
+        // using parseColor method
+        // with color hash code as its parameter
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#264653"));
+
+        // Set BackgroundDrawable
+        actionBar.setBackgroundDrawable(colorDrawable);
         getSupportActionBar().setTitle("Edit Item");
 
         editItem.setText(getIntent().getStringExtra(MainActivity.KEY_ITEM_TEXT));
