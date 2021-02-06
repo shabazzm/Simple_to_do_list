@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         rvItems.addItemDecoration(itemDecoration);
 
+
         // Define ActionBar object
         ActionBar actionBar;
         actionBar = getSupportActionBar();
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         // Set BackgroundDrawable
         actionBar.setBackgroundDrawable(colorDrawable);
         loadItems();
+
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
 
