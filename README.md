@@ -16,6 +16,7 @@ Time spent: **15** hours spent in total
 * As a user I want dividers between the items of my to do list so the list is easily visualized. 
 * As a user I want a aestheitically pleasing UI so that I want to use it more often
 
+
 The following **required** functionality is completed:
 
 * [X] User can **view a list of todo items**
@@ -31,13 +32,14 @@ The following **additional** features are implemented:
 * [X] Added dividers between list items
 * [X] Added Keyboard collapse when not in use
 * [X] Updated Color of Action Bar
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Updated Color of Buttons
+* [X] Added Color to List items.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='App_WalkThrough_Todo_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='App_WalkThrough_Todo_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
