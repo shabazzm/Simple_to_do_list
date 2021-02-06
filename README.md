@@ -1,10 +1,10 @@
-# Project 1 - *Simple_To_Do_App*
+# Project 1 - *ListZen
 
-**Simple_To_Do_App** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**ListZen** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
 Submitted by: **Maryum Shabazz**
 
-Time spent: **15** hours spent in total
+Time spent: **17** hours spent in total
 
 ## User Stories
 * As a user I want to be able to view a list of to do items so I that I can see what I need to complete.
